@@ -1,0 +1,27 @@
+.container {
+    height: 100%;
+}
+
+.material-icons {
+    margin-right: 12px;
+}
+
+.nav-list {
+    width: 200px;
+}
+
+img {
+    width: 60%;
+    height: 6rem;
+    margin-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu {
+    margin: .5rem 0 0 .5rem;
+}
+
+.toolbar {
+    height: 40px;
+}
