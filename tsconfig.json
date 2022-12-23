@@ -1,11 +1,13 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
+
+// "strict": false, //checagem de tipos retirada para esse projeto em específico
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
