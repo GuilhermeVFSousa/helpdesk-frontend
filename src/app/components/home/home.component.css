@@ -1,10 +1,8 @@
-.card {
-    width: 90%;
-    margin: auto;
-    margin-top: 35px;
-}
-
 
 img {
     height: 15rem;
+}
+
+.img-home {
+    margin-top: 20px;
 }
