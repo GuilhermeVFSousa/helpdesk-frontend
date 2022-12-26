@@ -23,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
+import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -32,7 +33,8 @@ import { HomeComponent } from './components/home/home.component';
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    TecnicoListComponent
   ],
   imports: [
     BrowserModule,
