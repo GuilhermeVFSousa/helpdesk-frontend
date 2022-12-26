@@ -19,9 +19,36 @@ img {
 }
 
 .menu {
-    margin: .5rem 0 0 .5rem;
+    margin-right: 15px;
+
 }
 
+
 .toolbar {
-    height: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-icon {
+    font-size: 45px;
+}
+
+.logo-nome {
+    margin-left: 10px;
+    position: initial;
+}
+
+.logout-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.logout-text {
+    font-size: 12px;
+}
+
+mat-divider {
+    background-color: rgb(75, 75, 75);
 }

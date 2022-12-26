@@ -1,39 +1,50 @@
-<mat-toolbar class="toolbar">
-    <i class="material-icons">support</i>
-    <span>gvfs - Help Desk</span>
-  </mat-toolbar>
-<mat-drawer-container class="container" autosize>
-    <mat-drawer #drawer class="sidenav" mode="side">
-    <img src="assets/img/project-manager-icon.png" alt="Imagem de navegação">
-      <mat-nav-list class="nav-list">
-        <a mat-list-item routerLink="/">
-           <i class="material-icons">home</i>
-           Home
-        </a>
-        <a mat-list-item routerLink="/">
-            <i class="material-icons">account_circle</i>
-            Técnicos
-         </a>
-         <a mat-list-item routerLink="/">
-            <i class="material-icons">person</i>
-            Clientes
-         </a>
-         <a mat-list-item routerLink="/">
-            <i class="material-icons">code</i>
-            Github
-         </a>
-         <a mat-list-item routerLink="/">
-            <i class="material-icons">logout</i>
-            Logout
-         </a>
-      </mat-nav-list>
-    </mat-drawer>
-  
-    <div class="sidenav-content">
-      <button class="menu" (click)="drawer.toggle()" mat-icon-button>
-        <mat-icon>menu</mat-icon>
-      </button>
-    </div>
-  
+
+    <mat-toolbar class="toolbar">
+        <div class="left">
+            <button class="menu" (click)="drawer.toggle()" mat-icon-button matTooltip="Expandir/recolher menu">
+              <mat-icon class="menu-icon">menu</mat-icon>
+            </button>
+            <button class="left" (click)="drawer.toggle()" mat-icon-button>
+              <mat-icon class="logo-icon">contact_support</mat-icon>
+            </button>
+          <span class="logo-nome">gvfs - Help Desk</span>
+          </div>
+          
+
+        <div class="logout-item">
+          <button class="logout" (click)="drawer.toggle()" mat-icon-button>
+            <mat-icon class="logout-icon">logout</mat-icon>
+            <span class="logout-text">Sair</span>
+          </button>
+        </div>
+
+      </mat-toolbar>
+      <mat-divider></mat-divider>
+      <mat-drawer-container class="container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="side">
+        <img src="assets/img/project-manager-icon.png" alt="Imagem de navegação">
+          <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+               <i class="material-icons">home</i>
+               Home
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">account_circle</i>
+                Técnicos
+             </a>
+             <a mat-list-item routerLink="/">
+                <i class="material-icons">person</i>
+                Clientes
+             </a>
+             <a mat-list-item routerLink="/">
+                <i class="material-icons">code</i>
+                Github
+             </a>
+             <a mat-list-item routerLink="/">
+                <i class="material-icons">logout</i>
+                Logout
+             </a>
+          </mat-nav-list>
+        </mat-drawer>
   </mat-drawer-container>
   
