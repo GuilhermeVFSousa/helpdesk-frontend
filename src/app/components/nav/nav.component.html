@@ -15,7 +15,7 @@
   </div>
 
   <div class="logout-item">
-    <button class="logout" (click)="drawer.toggle()" mat-icon-button>
+    <button class="logout" (click)="logout()" mat-icon-button>
       <mat-icon class="logout-icon">logout</mat-icon>
       <span class="logout-text">Sair</span>
     </button>
@@ -42,7 +42,7 @@
         <i class="material-icons">code</i>
         Github
       </a>
-      <a mat-list-item routerLink="/">
+      <a mat-list-item (click)="logout()">
         <i class="material-icons">logout</i>
         Logout
       </a>

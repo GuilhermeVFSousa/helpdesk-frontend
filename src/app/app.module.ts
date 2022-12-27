@@ -18,6 +18,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -64,8 +65,8 @@ import { ToastrModule } from 'ngx-toastr';
     MatListModule,
     MatCardModule,
     MatTooltipModule,
+    MatGridListModule,
     ToastrModule.forRoot({
-      timeOut: 4000,
       closeButton: true,
       progressBar: true
     })
