@@ -29,6 +29,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -72,7 +73,8 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     ToastrModule.forRoot({
       closeButton: true,
       progressBar: true
-    })
+    }),
+    NgxMaskModule.forRoot()
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
