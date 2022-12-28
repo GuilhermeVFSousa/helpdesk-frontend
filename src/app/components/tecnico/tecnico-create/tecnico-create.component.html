@@ -6,19 +6,21 @@
       <div class="space"><span>Selecione o perfil do usuário:</span></div>
       <div></div>
       <div>
-        <mat-checkbox class="margin" color="primary">Admin</mat-checkbox>
+        <mat-checkbox (click)="addPerfil(0)" class="margin" color="primary">Admin</mat-checkbox>
       </div>
       <div>
-        <mat-checkbox class="margin" color="primary">Cliente</mat-checkbox>
+        <mat-checkbox (click)="addPerfil(1)" class="margin" color="primary">Cliente</mat-checkbox>
       </div>
       <div>
-        <mat-checkbox class="margin" color="primary">Técnico</mat-checkbox>
+        <mat-checkbox (click)="addPerfil(2)" class="margin" color="primary">Técnico</mat-checkbox>
       </div>
     </section>
 
     <mat-form-field class="fullWidth" appearance="legacy">
       <mat-label>Nome</mat-label>
       <input 
+      [(ngModel)]="tecnico.nome"
+      name="nome"
       [formControl]="nome"
       required
       matInput 
@@ -30,6 +32,8 @@
     <mat-form-field class="fullWidth" appearance="legacy">
       <mat-label>CPF</mat-label>
       <input 
+      [(ngModel)]="tecnico.cpf"
+      name="cpf"
       [formControl]="cpf"
       required
       matInput 
@@ -41,6 +45,8 @@
     <mat-form-field class="fullWidth" appearance="legacy">
       <mat-label>E-mail</mat-label>
       <input 
+      [(ngModel)]="tecnico.email"
+      name="email"
       [formControl]="email"
       required
       matInput 
@@ -51,6 +57,8 @@
     <mat-form-field class="fullWidth" appearance="legacy">
       <mat-label>Senha</mat-label>
       <input 
+      [(ngModel)]="tecnico.senha"
+      name="senha"
       [formControl]="senha"
       required 
       type="password" 
@@ -61,6 +69,7 @@
 
     <button
       [disabled]="!validaCampos()"
+      (click)="create()"
       class="btn-form"
       mat-flat-button
       color="primary"
