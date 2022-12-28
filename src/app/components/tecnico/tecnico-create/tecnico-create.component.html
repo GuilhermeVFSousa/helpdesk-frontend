@@ -1,1 +1,48 @@
-<p>tecnico-create works!</p>
+<div class="container">
+    <form action="" class="form">
+        <h1>Cadastrar Técnico</h1>
+
+        <section class="section">
+            <div class="space"><span>Selecione o perfil do usuário:</span>
+            </div>
+            <div></div>
+            <div>
+                <mat-checkbox class="margin">Admin</mat-checkbox>
+            </div>
+            <div>
+                <mat-checkbox class="margin">Cliente</mat-checkbox>
+            </div>
+            <div>
+                <mat-checkbox class="margin">Técnico</mat-checkbox>
+            </div>
+          </section>
+
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Ex.. fulano de tal">
+            <mat-icon matSuffix>face</mat-icon>
+          </mat-form-field>
+   
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label>CPF</mat-label>
+            <input matInput placeholder="Ex..000.000.000-00">
+            <mat-icon matSuffix>pin </mat-icon>
+          </mat-form-field>
+   
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label>E-mail</mat-label>
+            <input matInput placeholder="Ex.. fulano@mail.com">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+   
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput placeholder="Ex.. 1234">
+            <mat-icon matSuffix>password</mat-icon>
+          </mat-form-field>
+   
+          <button class="btn-form" mat-flat-button color="primary">Cadastrar</button>
+          <button class="btn-form" mat-stroked-button>Cancelar</button>
+
+    </form>
+</div>
