@@ -1,0 +1,75 @@
+<div class="container">
+    <form action="" class="form">
+      <h1>Deletar Cliente</h1>
+  
+      <section class="section">
+        <div class="space"><span>Selecione o perfil do usuário:</span></div>
+        <div></div>
+        <div>
+          <mat-checkbox [disabled]="true" class="margin" color="primary">Admin</mat-checkbox>
+        </div>
+        <div>
+          <mat-checkbox [disabled]="true" class="margin" color="primary">Cliente</mat-checkbox>
+        </div>
+        <div>
+          <mat-checkbox [disabled]="true" class="margin" color="primary">Cliente</mat-checkbox>
+        </div>
+      </section>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="cliente.nome"
+        name="nome"
+        matInput 
+        [disabled]="true"/>
+        <mat-icon matSuffix>face</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>CPF</mat-label>
+        <input 
+        [(ngModel)]="cliente.cpf"
+        name="cpf"
+        matInput 
+        [disabled]="true"
+        mask="000.000.000-00"/>
+        <mat-icon matSuffix>pin </mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>E-mail</mat-label>
+        <input 
+        [(ngModel)]="cliente.email"
+        name="email"
+        [disabled]="true"
+        matInput  />
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="legacy">
+        <mat-label>Senha</mat-label>
+        <input 
+        [(ngModel)]="cliente.senha"
+        name="senha"
+        [disabled]="true"
+        type="password" 
+        matInput 
+        placeholder="Ex.. 1234" />
+        <mat-icon matSuffix>password</mat-icon>
+      </mat-form-field>
+  
+      <button
+        (click)="delete()"
+        class="btn-form"
+        mat-flat-button
+        color="warn"
+      >
+        Excluir
+      </button>
+      <button routerLink="../../" class="btn-form" mat-stroked-button>
+        Cancelar
+      </button>
+    </form>
+  </div>
+  
