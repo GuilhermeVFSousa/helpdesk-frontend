@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+  }
+
+mat-form-field {
+    width: 100%;
+}
+
+.dv-novo-chamado {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.edit {
+  color: rgb(216, 216, 216);
+  margin-right: 10px;
+}
+
+.visibility {
+  color: rgb(216, 216, 216);
+  
+}
+
+mat-radio-button {
+  margin-top: 15px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
