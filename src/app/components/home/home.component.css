@@ -6,3 +6,13 @@ img {
 .img-home {
     margin-top: 20px;
 }
+
+.container {
+    width: 97%;
+    height: 80%;
+}
+
+mat-expansion-panel {
+    background-color: rgb(48, 48, 48);
+    margin-bottom: 25px;
+}

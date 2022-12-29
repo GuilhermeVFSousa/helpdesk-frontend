@@ -19,6 +19,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,6 +41,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
 import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
 import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';
+
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -90,6 +92,7 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
     MatCardModule,
     MatTooltipModule,
     MatGridListModule,
+    MatExpansionModule,
     ToastrModule.forRoot({
       closeButton: true,
       progressBar: true
