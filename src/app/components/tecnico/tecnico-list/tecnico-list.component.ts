@@ -13,6 +13,7 @@ import { TecnicoService } from '../../../services/tecnico.service';
 export class TecnicoListComponent implements OnInit {
 
   ELEMENT_DATA: Tecnico[] = []
+  FILTERED_DATA: Tecnico[] = []
 
    
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'acoes'];
@@ -36,6 +37,16 @@ export class TecnicoListComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
     })
+  }
+
+  countTecnico(): any {
+    let list: Tecnico[] = []
+    this.ELEMENT_DATA.forEach(element => {
+      if(element.nome == 'Guilherme Sousa')
+        list.push(element)
+    })
+    this.FILTERED_DATA = list;
+    return this.FILTERED_DATA.length;
   }
 
   applyFilter(event: Event) {

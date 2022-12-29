@@ -11,11 +11,22 @@
 }
 
 img {
-    width: 70%;
-    height: 6rem;
-    margin-left: 35px;
+    width: 80%;
+    height: 8rem;
+    margin-left: 15px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    filter: brightness(0) invert(1);
+}
+
+img:hover {
+    width: 80%;
+    height: 8rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    filter: none;
+    cursor: pointer;
 }
 
 .menu {
@@ -50,7 +61,7 @@ img {
 }
 
 mat-divider {
-    background-color: #9c9c9c;
+    background-color:#9e5236;
 }
 
 .card {
@@ -58,4 +69,12 @@ mat-divider {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 25px;
+}
+
+i {
+    font-size: 20px;
+}
+
+a:hover {
+    color: #d55122;
 }
