@@ -5,9 +5,5 @@
 
 [[redirects]]
     from = "/*"
-<<<<<<< HEAD
     to = "/index.html"
-=======
-    to = "/login"
->>>>>>> a0c4a631ee5b5c72bbcabbce5ecb70c149f341ad
     status = 200
