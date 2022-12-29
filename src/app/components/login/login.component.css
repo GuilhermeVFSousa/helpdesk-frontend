@@ -52,8 +52,13 @@ img {
     width: 40%;
     display: block;
     margin: 0 auto; 
+    margin-bottom: 30px;
 }
 
 button {
     margin-top: 15px;
+}
+
+mat-icon {
+    opacity: .6;
 }
