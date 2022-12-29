@@ -1,0 +1,39 @@
+.fullWidth {
+    width: 100%;
+ }
+
+ textarea {
+    height: 300px;
+    max-height: 400px;
+    min-height: 250px;
+ }
+
+ .container {
+    width: 800px;
+ }
+
+ .btn-form {
+    margin-right: 15px;
+    width: 110px;
+ }
+
+ h1 {
+    margin-bottom: 50px;
+ }
+
+ .space {
+    margin-bottom: 10px;
+ }
+
+ .status {
+    margin-right: 25px;
+ }
+
+ .status-prioridade {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .status-prioridade mat-form-field {
+    width: 100%;
+ }

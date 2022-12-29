@@ -1,1 +1,65 @@
-<p>chamado-create works!</p>
+<div class="container">
+    <h1>Criando Chamado</h1>
+
+    <form action="" class="form">
+    <mat-form-field class="fullWidth" appearance="outline">
+          <mat-label>Título do Chamado</mat-label>
+          <input 
+          matInput 
+          placeholder="Ex.. Manutenção website" 
+          maxlength="100"/>
+        </mat-form-field>
+    <div class="status-prioridade">
+        <mat-form-field class="status" appearance="outline">
+            <mat-label>Selecione um status</mat-label>
+            <mat-select>
+              <mat-option value="0">ABERTO</mat-option>
+              <mat-option value="1">EM ANDAMENTO</mat-option>
+              <mat-option value="2">ENCERRADO</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Selecione uma prioridade</mat-label>
+            <mat-select>
+              <mat-option value="0">BAIXA</mat-option>
+              <mat-option value="1">MÉDIA</mat-option>
+              <mat-option value="2">ALTA</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="tecnico">
+        <mat-form-field class="fullWidth" appearance="outline">
+            <mat-label>Selecione um técnico</mat-label>
+            <mat-select>
+              <mat-option value="0">Guilherme Victor Faustino de Sousa</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="cliente">
+        <mat-form-field class="fullWidth" appearance="outline">
+            <mat-label>Selecione um cliente</mat-label>
+            <mat-select>
+              <mat-option value="0">Guilherme Victor Faustino de Sousa</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="textArea">
+        <mat-form-field class="fullWidth" appearance="outline">
+            <mat-label>Textarea</mat-label>
+            <textarea matInput 
+            placeholder="Ex.. Manutenção  em meu website" ></textarea>
+          </mat-form-field>
+    </div>
+        <button
+          class="btn-form"
+          mat-flat-button
+          color="primary"
+        >
+          Concluir
+        </button>
+        <button routerLink="../" class="btn-form" mat-stroked-button>
+          Cancelar
+        </button>
+      </form>
+
+</div>
