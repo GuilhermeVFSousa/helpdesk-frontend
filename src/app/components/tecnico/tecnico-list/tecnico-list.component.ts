@@ -39,16 +39,6 @@ export class TecnicoListComponent implements OnInit {
     })
   }
 
-  countTecnico(): any {
-    let list: Tecnico[] = []
-    this.ELEMENT_DATA.forEach(element => {
-      if(element.nome == 'Guilherme Sousa')
-        list.push(element)
-    })
-    this.FILTERED_DATA = list;
-    return this.FILTERED_DATA.length;
-  }
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();

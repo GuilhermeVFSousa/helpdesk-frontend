@@ -1,101 +1,59 @@
-<mat-card-content class="container">
-
-<div class='img-home'>
-<img
-  mat-card-image
-  src="assets/img/home-image.svg"
-  alt="Photo of a Shiba Inu"
-/>
+<div>
+  <h3>Olá, seja bem vindo!</h3>
+  <h4>Para visualizar as informações, clique nas caixas para expandir.</h4>
 </div>
+
+<mat-card-content class="container">
 <mat-card-content>
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <i class="material-icons">headset_mic</i>
           Total de chamados
         </mat-panel-title>
       </mat-expansion-panel-header>
   
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Age</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
+      <h1>{{ countAllCham() }}</h1>
     </mat-expansion-panel>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <i class="material-icons">headset_mic</i>
           Total de chamados EM ANDAMENTO
         </mat-panel-title>
       </mat-expansion-panel-header>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Age</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
+      <h1>{{ countAllChamAndam() }}</h1>
     </mat-expansion-panel>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <i class="material-icons">headset_mic</i>
           Total de chamados ENCERRADOS
         </mat-panel-title>
       </mat-expansion-panel-header>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Age</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
+      <h1>{{ countAllChamEncer() }}</h1>
     </mat-expansion-panel>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <i class="material-icons">person</i>
           Total de Clientes cadastrados
         </mat-panel-title>
       </mat-expansion-panel-header>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Age</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
+      <h1>{{ countAllCli() }}</h1>
     </mat-expansion-panel>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <i class="material-icons">account_circle</i>
           Total de Técnicos cadastrados
         </mat-panel-title>
       </mat-expansion-panel-header>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Age</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
+      <h1>{{ countAllTec() }}</h1>
     </mat-expansion-panel>
 </mat-card-content>
 </mat-card-content>
