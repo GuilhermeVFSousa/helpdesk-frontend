@@ -78,3 +78,10 @@ i {
 a:hover {
     color: #d55122;
 }
+
+@media only screen and (max-width:480px) {
+    .container {
+       width: 100%;
+    }
+
+ }

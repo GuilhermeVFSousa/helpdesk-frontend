@@ -37,3 +37,9 @@
  .status-prioridade mat-form-field {
     width: 100%;
  }
+
+ @media only screen and (max-width:480px) {
+   .container {
+      width: 100%;
+   }
+}
