@@ -41,6 +41,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
 import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
 import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';
+import { MatSortModule } from '@angular/material/sort';
 
 
 // Para trabalhar com formulários no Angular 12
@@ -93,6 +94,7 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
     MatTooltipModule,
     MatGridListModule,
     MatExpansionModule,
+    MatSortModule,
     ToastrModule.forRoot({
       closeButton: true,
       progressBar: true

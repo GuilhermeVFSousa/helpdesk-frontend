@@ -34,6 +34,7 @@ export class ChamadoListComponent implements OnInit {
       this.ELEMENT_DATA = resposta;
       this.dataSource = new MatTableDataSource<Chamado>(resposta);
       this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
     })
   }
 
