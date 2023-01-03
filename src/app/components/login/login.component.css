@@ -90,6 +90,19 @@ mat-icon {
 }
 
 .divider-footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
     height: 3%;
     background-color: #d55122;
 }
+
+@media only screen and (max-width:480px) {
+    h5 {
+        margin-bottom: 45px;
+        position:fixed;
+        bottom: 0;
+        z-index: 99999;
+        align-items: center;
+    }
+ }
